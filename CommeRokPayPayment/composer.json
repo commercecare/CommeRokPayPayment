@@ -1,0 +1,20 @@
+{
+  "name": "comme/rokpay-payment",
+  "description": "RokPay Payment",
+  "version": "v1.0.8",
+
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "CommeRokPayPayment\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "CommeRokPayPayment\\CommeRokPayPayment",
+    "label": {
+      "de-DE": "RokPay Payment",
+      "en-GB": "RokPay Payment"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/6.1/src/Core/System/SystemConfig/Schema/config.xsd">
+
+    <card>
+
+        <title>API Settings</title>
+        <title lang="de-DE">API-Konfiguration</title>
+
+        <input-field type="single-select">
+            <name>rpEnvironment</name>
+            <options>
+                <option>
+                    <id>prod</id>
+                    <name>Production</name>
+                </option>
+                <option>
+                    <id>stg</id>
+                    <name>Staging</name>
+                </option>
+            </options>
+            <label>RokPay Environment</label>
+            <label lang="bs-BA">RokPay okuruženje</label>
+            <placeholder>Choose environment</placeholder>
+            <placeholder lang="de-DE">Izaberite okruženje</placeholder>
+        </input-field>
+
+        <input-field>
+            <name>shopNumber</name>
+            <label>Shop number</label>
+
+        </input-field>
+
+        <input-field type="password">
+            <name>apiKey</name>
+            <label>API Key</label>
+        </input-field>
+
+        <component name="rokpay-api-test-button">
+            <name>apiTest</name>
+            <label>API Connection Test</label>
+        </component>
+
+    </card>
+</config>
